@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Widget Page</title>
+  <title>Widget Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+  <h1 style="text-align:center; margin-top:50px;">Widget Test Page</h1>
+
   <script>
   (function(){
     var d=[],h=location.hostname;
     if(d.length&&!d.some(x=>h===x||h.endsWith('.'+x)))return console.warn('Widget: Domain not allowed');
     var i=document.createElement('iframe'),s=i.style;
-    i.src='3a56d08e-6861-4ac7-8aed-a84ec7d2613a-00-1if7u0y436hyn.worf.replit.dev/widget/f21187ac-b73b-4424-9cc7-46aea7552c30?primaryColor=%232563eb&textColor=%23ffffff&backgroundColor=%23ffffff';
+    i.src='https://3a56d08e-6861-4ac7-8aed-a84ec7d2613a-00-1if7u0y436hyn.worf.replit.dev/widget/84fd42dc-2e90-4947-8f9d-87b73313ccc5?primaryColor=%232563eb&textColor=%23ffffff&backgroundColor=%23ffffff';
     s.cssText='position:fixed;bottom:20px;right:20px;width:350px;height:500px;border:none;border-radius:10px;box-shadow:0 0 20px rgba(0,0,0,0.2);z-index:999999';
     i.allowTransparency=true;
     function r(){
@@ -20,9 +23,7 @@
         s.width='350px';s.height='500px';s.left='auto';s.right='20px';s.bottom='20px'
       }
     }
-    r();
-    addEventListener('resize',r);
-    document.body.appendChild(i)
+    r();addEventListener('resize',r);document.body.appendChild(i)
   })();
   </script>
 </body>
